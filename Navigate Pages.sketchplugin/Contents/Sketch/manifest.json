@@ -1,0 +1,35 @@
+{
+  "name" : "Navigate Pages",
+  "description" : "Give shortcuts for navigating through pages",
+  "author" : "iain eudailey",
+  "identifier" : "com.example.sketch.53bfd550-238f-46b6-8b3b-8373105d6acc",
+  "version" : "1.0",
+  "homepage" : "http://github.com/graphical-iain/Navigate-Sketch-Pages",
+  "commands" : [
+    {
+      "script" : "script.cocoascript",
+      "name" : "Next Page",
+      "shortcut": "cmd shift ]",
+      "handlers" : {
+        "run" : "next"
+      },
+      "identifier" : "page-next"
+    },
+    {
+      "script" : "script.cocoascript",
+      "name" : "Previous Page",
+      "shortcut": "cmd shift [",
+      "handlers" : {
+        "run" : "prev"
+      },
+      "identifier" : "page-prev"
+    }
+  ],
+  "menu" : {
+    "items" : [
+      "page-next",
+      "page-prev"
+    ],
+    "title" : "Navigate Pages"
+  }
+}
